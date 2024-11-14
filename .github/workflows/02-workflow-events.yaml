@@ -1,8 +1,9 @@
 name: 02 - Eventos
-on: [ push
-    pull_request
-    schedule 40 16 14 11 4
-    workflow_dispatch ]
+on: 
+  - push
+  - pull_request
+  - schedule 40 16 14 11 4
+  - workflow_dispatch 
 jobs:
   echo:
     runs-on: ubuntu-latest
